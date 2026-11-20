@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartCraft Digital | Mobile-First Greeting Cards</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E11D48', // Rose / Romantic Red
+                        accent: '#F43F5E',
+                        blush: '#FFF1F2',
+                        dark: '#1F2937',
+                        light: '#FAFAFA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-light text-dark antialiased pb-24 md:pb-0">
+
+    <!-- Compact Mobile-Optimized Header / Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-rose-100/80">
+        <div class="max-w-6xl mx-auto px-3.5 py-2.5 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-1.5">
+                <div class="w-7 h-7 sm:w-9 sm:h-9 bg-primary text-white rounded-lg sm:rounded-xl flex items-center justify-center font-bold text-sm sm:text-lg shadow-sm shadow-primary/30">
+                    <i data-lucide="heart" class="w-3.5 h-3.5 sm:w-5 sm:h-5 fill-white"></i>
+                </div>
+                <span class="text-base sm:text-xl font-extrabold tracking-tight text-dark">HeartCraft<span class="text-primary">.cards</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+                <a href="#categories" class="hover:text-primary transition">Occasions</a>
+                <a href="#pricing" class="hover:text-primary transition">Pricing</a>
+                <a href="#faq" class="hover:text-primary transition">FAQ</a>
+            </div>
+            <div>
+                <a href="https://wa.me/919876543210?text=Hi%20HeartCraft,%20I%20want%20to%20create%20a%20special%20digital%20card!" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-lg sm:rounded-xl text-[11px] sm:text-sm font-bold transition flex items-center gap-1 shadow-2xs">
+                    <i data-lucide="message-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                    <span>Order</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ultra Mobile-Friendly Hero Section -->
+    <header class="pt-20 sm:pt-28 pb-12 px-4 text-center relative overflow-hidden bg-gradient-to-b from-blush via-white to-light border-b border-rose-100">
+        <div class="max-w-2xl mx-auto">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-1.5 bg-rose-100/80 text-primary px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold mb-4">
+                <i data-lucide="sparkles" class="w-3 h-3"></i>
+                <span>Surprise Your Loved Ones Digitally</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-snug">
+                Magical Greeting Websites <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-rose-600">for Special Occasions</span>
+            </h1>
+
+            <!-- Subtext -->
+            <p class="text-sm sm:text-base text-gray-600 mb-6 max-w-lg mx-auto leading-relaxed px-2">
+                Interactive web cards for Birthdays, Anniversaries, Proposals & Apologies with music, photos & animations.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-3 px-4 max-w-sm mx-auto">
+                <a href="#pricing" class="w-full bg-primary text-white py-3.5 rounded-xl font-bold hover:bg-rose-700 transition shadow-md shadow-primary/20 flex items-center justify-center gap-2 text-sm">
+                    <span>View Pricing (From ₹149)</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="https://wa.me/919876543210?text=Hi%20HeartCraft,%20I%20want%20to%20order%20a%20card." target="_blank" class="w-full bg-white border border-gray-200 text-dark py-3 rounded-xl font-bold hover:bg-gray-50 transition flex items-center justify-center gap-2 text-sm">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Trust Bar / Quick Stats Grid -->
+            <div class="mt-8 pt-6 border-t border-rose-100/80 grid grid-cols-3 gap-2 text-center max-w-sm mx-auto">
+                <div class="bg-white/80 p-2.5 rounded-xl border border-rose-50 shadow-2xs">
+                    <p class="text-lg font-extrabold text-primary">₹149</p>
+                    <p class="text-[10px] text-gray-500 font-medium">Ready Card</p>
+                </div>
+                <div class="bg-white/80 p-2.5 rounded-xl border border-rose-50 shadow-2xs">
+                    <p class="text-lg font-extrabold text-primary">₹199</p>
+                    <p class="text-[10px] text-gray-500 font-medium">Custom Card</p>
+                </div>
+                <div class="bg-white/80 p-2.5 rounded-xl border border-rose-50 shadow-2xs">
+                    <p class="text-lg font-extrabold text-primary">10 mins</p>
+                    <p class="text-[10px] text-gray-500 font-medium">Fast Delivery</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile-Friendly Swipeable / Scrollable Occasions Carousel -->
+    <section id="categories" class="py-12 px-4 bg-white border-b border-rose-100/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-6">
+                <h2 class="text-[11px] font-bold uppercase tracking-widest text-primary mb-1">OCCASIONS</h2>
+                <p class="text-2xl font-extrabold tracking-tight">Choose Your Card</p>
+                <p class="text-xs text-gray-500 mt-1">Swipe horizontally on mobile to view demo cards</p>
+            </div>
+
+            <!-- Horizontal Swipeable Carousel -->
+            <div class="flex overflow-x-auto gap-4 pb-4 pt-2 no-scrollbar snap-x snap-mandatory px-1">
+                <!-- Birthday -->
+                <div class="w-[260px] sm:w-[280px] shrink-0 snap-start bg-blush rounded-2xl p-5 border border-rose-100 flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-white text-primary rounded-xl flex items-center justify-center mb-3 shadow-xs">
+                            <i data-lucide="cake" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-base font-bold mb-1">Birthday Surprise</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">Interactive cake cutting, photo gallery, personal wishes & background music.</p>
+                    </div>
+                    <a href="birthday.html" target="_blank" class="w-full py-2.5 bg-white border border-rose-200 text-primary rounded-xl font-bold text-xs flex items-center justify-center gap-1 shadow-2xs hover:bg-primary hover:text-white transition">
+                        <span>Preview Demo</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Anniversary -->
+                <div class="w-[260px] sm:w-[280px] shrink-0 snap-start bg-blush rounded-2xl p-5 border border-rose-100 flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-white text-primary rounded-xl flex items-center justify-center mb-3 shadow-xs">
+                            <i data-lucide="heart" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-base font-bold mb-1">Anniversary Love</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">Relive your journey with a timeline of memories, love notes & music.</p>
+                    </div>
+                    <a href="anniversary.html" target="_blank" class="w-full py-2.5 bg-white border border-rose-200 text-primary rounded-xl font-bold text-xs flex items-center justify-center gap-1 shadow-2xs hover:bg-primary hover:text-white transition">
+                        <span>Preview Demo</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Proposal -->
+                <div class="w-[260px] sm:w-[280px] shrink-0 snap-start bg-blush rounded-2xl p-5 border border-rose-100 flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-white text-primary rounded-xl flex items-center justify-center mb-3 shadow-xs">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-base font-bold mb-1">Proposal Website</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">Playful "Will You Marry Me?" interactive buttons & ring reveal.</p>
+                    </div>
+                    <a href="propose.html" target="_blank" class="w-full py-2.5 bg-white border border-rose-200 text-primary rounded-xl font-bold text-xs flex items-center justify-center gap-1 shadow-2xs hover:bg-primary hover:text-white transition">
+                        <span>Preview Demo</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Sorry / Apology -->
+                <div class="w-[260px] sm:w-[280px] shrink-0 snap-start bg-blush rounded-2xl p-5 border border-rose-100 flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-white text-primary rounded-xl flex items-center justify-center mb-3 shadow-xs">
+                            <i data-lucide="smile" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-base font-bold mb-1">Sorry / Apology</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4">Melt their heart with a sincere apology note & cute animations.</p>
+                    </div>
+                    <a href="sorry.html" target="_blank" class="w-full py-2.5 bg-white border border-rose-200 text-primary rounded-xl font-bold text-xs flex items-center justify-center gap-1 shadow-2xs hover:bg-primary hover:text-white transition">
+                        <span>Preview Demo</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-12 px-4 bg-gradient-to-b from-light to-blush">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-8">
+                <h2 class="text-[11px] font-bold uppercase tracking-widest text-primary mb-1">PRICING</h2>
+                <p class="text-2xl sm:text-3xl font-extrabold tracking-tight">Super Affordable Pricing</p>
+                <p class="text-xs text-gray-500 mt-1">Instant delivery directly on your WhatsApp</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 items-stretch">
+                <!-- Ready Template -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <span class="bg-gray-100 text-gray-800 text-[10px] px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">Fast Setup</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">Ready-Made Card</h3>
+                        <p class="text-gray-500 text-xs mb-4">Pick a pre-made design and add your name & message.</p>
+                        <div class="text-3xl font-extrabold mb-4">₹149 <span class="text-xs font-medium text-gray-500">/ one-time</span></div>
+                        <ul class="space-y-2.5 mb-6 text-xs text-gray-700">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> <span>Ready Birthday, Anniversary, Propose, Sorry</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> <span>Custom name & personal note</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> <span>Romantic background music</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> <span>Delivered in 10 mins</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=Hi%20HeartCraft,%20I%20want%20to%20order%20a%20Ready-Made%20Card%20for%20₹149." target="_blank" class="w-full py-3 bg-dark text-white text-center rounded-xl font-bold text-xs hover:bg-gray-800 transition">
+                        Order Ready Card (₹149)
+                    </a>
+                </div>
+
+                <!-- Customized Template -->
+                <div class="bg-white rounded-2xl p-6 border-2 border-primary relative shadow-md flex flex-col justify-between">
+                    <div>
+                        <span class="bg-primary text-white text-[10px] px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">⭐ Most Popular</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">Fully Customized Card</h3>
+                        <p class="text-gray-500 text-xs mb-4">Built specially with your photos, love story timeline & favorite song.</p>
+                        <div class="text-3xl font-extrabold mb-4">₹199 <span class="text-xs font-medium text-gray-500">/ one-time</span></div>
+                        <ul class="space-y-2.5 mb-6 text-xs text-gray-700">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary shrink-0"></i> <span><strong>Up to 10 custom photos gallery</strong></span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary shrink-0"></i> <span>Love story timeline or custom notes</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary shrink-0"></i> <span>Embed your favorite song</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary shrink-0"></i> <span>Interactive elements & surprise screens</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=Hi%20HeartCraft,%20I%20want%20to%20order%20a%20Fully%20Customized%20Card%20for%20₹199." target="_blank" class="w-full py-3 bg-primary text-white text-center rounded-xl font-bold text-xs hover:bg-rose-700 transition shadow-sm">
+                        Order Customized Card (₹199)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive FAQ Accordion -->
+    <section id="faq" class="py-12 px-4 bg-white border-t border-rose-100">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-[11px] font-bold uppercase tracking-widest text-primary mb-1">FAQ</h2>
+                <p class="text-2xl font-extrabold tracking-tight">Got Questions?</p>
+            </div>
+            <div class="space-y-3">
+                <div class="border border-rose-100 rounded-xl overflow-hidden bg-blush">
+                    <button onclick="toggleFaq(1)" class="w-full p-4 text-left font-bold text-xs sm:text-sm flex justify-between items-center gap-3">
+                        <span>How will I send the card to my partner?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-1" class="w-4 h-4 text-gray-500 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-4 pb-4 text-gray-600 text-xs leading-relaxed">
+                        We send you a short link on WhatsApp. You can send it directly to your partner via WhatsApp, Instagram DM, or SMS!
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 rounded-xl overflow-hidden bg-blush">
+                    <button onclick="toggleFaq(2)" class="w-full p-4 text-left font-bold text-xs sm:text-sm flex justify-between items-center gap-3">
+                        <span>How fast is delivery?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-2" class="w-4 h-4 text-gray-500 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-4 pb-4 text-gray-600 text-xs leading-relaxed">
+                        Ready cards take about 10 minutes. Customized cards with your photos take around 30 minutes!
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 rounded-xl overflow-hidden bg-blush">
+                    <button onclick="toggleFaq(3)" class="w-full p-4 text-left font-bold text-xs sm:text-sm flex justify-between items-center gap-3">
+                        <span>Can I add my own background song?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-3" class="w-4 h-4 text-gray-500 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-4 pb-4 text-gray-600 text-xs leading-relaxed">
+                        Yes! Just send us your favorite song title or link on WhatsApp, and we will embed it into the card.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-10 px-4 text-center">
+        <span class="text-lg font-bold tracking-tight">HeartCraft<span class="text-primary">.cards</span></span>
+        <p class="text-gray-400 text-xs mt-1">Creating unforgettable digital moments for your loved ones.</p>
+        <p class="text-gray-500 text-[11px] mt-6">&copy; 2026 HeartCraft Digital. Built with ❤️</p>
+    </footer>
+
+    <!-- Sticky Mobile Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 p-2.5 bg-white/95 backdrop-blur-md border-t border-rose-100 md:hidden z-50 shadow-2xl flex items-center gap-2">
+        <a href="https://wa.me/919876543210?text=Hi%20HeartCraft,%20I%20want%20to%20order%20a%20card!" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-3 px-3 rounded-xl font-bold flex items-center justify-center gap-1.5 text-xs shadow-md shadow-emerald-600/20">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Order on WhatsApp</span>
+        </a>
+        <a href="#pricing" class="bg-primary hover:bg-rose-700 text-white py-3 px-3.5 rounded-xl font-bold text-xs flex items-center justify-center shadow-md shadow-primary/20">
+            ₹149 / ₹199
+        </a>
+    </div>
+
+    <script>
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        lucide.createIcons();
+    </script>
+</body>
+</html>
